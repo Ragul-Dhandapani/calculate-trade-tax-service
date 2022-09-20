@@ -44,7 +44,7 @@ public class CalculateTradeTaxService {
      * @param tradeId
      * @return
      */
-    @Cacheable(cacheNames = "calculate_trade_tax_service_cache", key = "#tradeId")
+    @Cacheable(cacheNames = CACHE_NAME, key = "#tradeId")
     public CalculateTradeTaxResponse calculateTradeTaxDue(Long tradeId) {
         LOGGER.info("Trade Id to calculate the tax due {}" , tradeId);
         CalculateTradeTaxResponse calculateTradeTaxResponse = null;

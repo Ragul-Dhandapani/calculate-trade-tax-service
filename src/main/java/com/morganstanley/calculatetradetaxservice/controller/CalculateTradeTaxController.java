@@ -22,6 +22,7 @@ import javax.validation.Valid;
 
 import static com.morganstanley.calculatetradetaxservice.constants.ApplicationConstants.*;
 
+@RequestMapping(BASE_API_URL)
 @RestController
 @Validated
 @Api(value = "Calculate Trade Tax Due MicroService")
